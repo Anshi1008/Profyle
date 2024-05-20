@@ -1,4 +1,5 @@
-.App {
+
+/* .App {
   text-align: center;
 }
 
@@ -34,5 +35,130 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+
+
+.navStyle{
+  height: max(8vh,4vw); 
+  font-size: max(1.5vh,1.5vw);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  /* overflow: hidden; */
+}
+*::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit (Chrome, Safari) */
+}
+.homepage-outer-container{
+  margin: 0;
+  margin-top: max(8vh,4vw); 
+  overflow-y: scroll;
+  flex: 1;
+  color: rgb(227, 224, 224);
+  /* width: 100%;
+  height: 100%; */
+  background-color: rgb(14, 13, 13);
+  padding: 0;
+}
+.appdiv{
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.homepage-inner-container{
+  width: 100%;
+  flex-direction: row;
+}
+
+.homepage-left-container{
+  width: 70%;
+  height: 50%;
+}
+.homepage-right-container{
+  height: 100%;
+  width: 30%;
+  border-left: 1vw solid white;
+  position: fixed;
+  top: max(8vh,4vw);
+  right: 0;
+}
+
+.left-inner-div{
+  width: 95%;
+  background-color: rgb(225, 225, 225);
+  /* height: 100px; */
+  margin: 2.5%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: max(.5vh,.5vw);
+}
+.profile-image-home{
+  height: max(8vh,5.5vw);
+  width: max(8vh,5.5vw);
+  object-fit: cover;
+  margin: 1%;
+  border-radius: 50%; 
+  border: 1px solid black;
+  margin-top: .5%;
+  margin-bottom: .5%;
+}
+
+.whats-new-today-div{
+  width: 60%;
+  padding: .5%;
+  margin-left: 1%;
+  color: rgb(27, 27, 27);
+  font-size: max(2.2vh,2vw);
+  border-bottom: 2px solid black;
+}
+
+.homepage-right-profile-info{
+  width: 100%;
+}
+
+.homepage-right-profile-info-image{
+  object-fit: cover;
+}
+.homepage-right-profile-info-text-container{
+  padding-left: 13%;
+  padding-right: 13%;
+}
+
+.left-inner-div-posts{
+  width: 95%;
+  background-color: rgb(225, 225, 225);
+  /* height: 100px; */
+  margin: 2.5%;
+  margin-bottom: 2%;
+  margin-top: 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: max(.5vh,.5vw);
+}
+
+@media screen and (max-width: 110vh) {
+  .homepage-right-container{
+    display: none;
+  }
+  .homepage-left-container{
+    width: 100%;
+  }
+  .profile-image-home{
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+  }
+  .whats-new-today-div{
+    padding: 1%;
+    margin-left: 2%;
+    border-bottom: 1px solid black;
   }
 }
