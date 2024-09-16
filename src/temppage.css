@@ -1,0 +1,43 @@
+
+.main_outer_div{
+    margin-top: max(5vw,9vh);
+}
+/* .innerDiv{
+    margin: 2px;
+} */
+.inner-div-in-search-page{
+    width: 95%;
+    /* background-color: rgb(225, 225, 225); */
+    background-color: white;
+    /* height: 100px; */
+    margin: 2.5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: max(.5vh,.5vw);
+}
+.profile-image-searchpage{
+    cursor: pointer;
+    height: max(8vh,5.5vw);
+    width: max(8vh,5.5vw);
+    object-fit: cover;
+    margin: 1%;
+    border-radius: 50%; 
+    border: 1px solid black;
+    margin-top: .5%;
+    margin-bottom: .5%;
+  }
+  .person-info-div{
+    width: 90%;
+    padding: .5%;
+    margin-left: 1%;
+    cursor: pointer;
+    color: rgb(27, 27, 27);
+    font-size: max(1.5vh,1.5vw);
+  }
+  .about-of-the-user{
+    font-weight: 100;
+    font-size: max(1vh,1vw);
+  }

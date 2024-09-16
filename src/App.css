@@ -41,7 +41,8 @@
 
 .navStyle{
   height: max(8vh,4vw); 
-  font-size: max(1.5vh,1.5vw);
+  font-size: max(1.5vh,1.5vw); 
+
 }
 
 *{
@@ -90,7 +91,8 @@
 
 .left-inner-div{
   width: 95%;
-  background-color: rgb(225, 225, 225);
+  /* background-color: rgb(225, 225, 225); */
+  background-color: white;
   /* height: 100px; */
   margin: 2.5%;
   margin-bottom: 2%;
@@ -101,6 +103,7 @@
   padding: max(.5vh,.5vw);
 }
 .profile-image-home{
+  cursor: pointer;
   height: max(8vh,5.5vw);
   width: max(8vh,5.5vw);
   object-fit: cover;
@@ -115,6 +118,7 @@
   width: 60%;
   padding: .5%;
   margin-left: 1%;
+  cursor: pointer;
   color: rgb(27, 27, 27);
   font-size: max(2.2vh,2vw);
   border-bottom: 2px solid black;
@@ -134,17 +138,28 @@
 
 .left-inner-div-posts{
   width: 95%;
-  background-color: rgb(225, 225, 225);
+  /* background-color: rgb(225, 225, 225); */
+  background-color: white;
   /* height: 100px; */
   margin: 2.5%;
   margin-bottom: 2%;
   margin-top: 0;
   border-radius: 5px;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   padding: max(.5vh,.5vw);
 }
-
+@media screen and (max-width:55vh) {
+  .edit-follow-button{
+    margin-top: 25vh;
+  }
+}
+@media screen and (min-width:90vh) {
+  .navStyle{
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+}
 @media screen and (max-width: 110vh) {
   .homepage-right-container{
     display: none;
@@ -161,4 +176,13 @@
     margin-left: 2%;
     border-bottom: 1px solid black;
   }
+  .tittle{
+    font-size: max(1.8vh,1.5vw);
+  }
+}
+.neon-shadow {
+  box-shadow: 0 0 5px #ff00cc, 0 0 10px #3333ff, 0 0 15px #ff00cc;
+}
+.neon-shadow-hover:hover {
+  box-shadow: 0 0 10px #ff00cc, 0 0 15px #3333ff, 0 0 20px #ff00cc;
 }
