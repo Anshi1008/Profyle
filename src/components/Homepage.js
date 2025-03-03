@@ -6,7 +6,7 @@ import { addFollower ,addPost,getUser} from '../App'
 const Homepage = ({curr1}) =>{
   const [postArray,SetPostArray] = useState([]);
     const navigate = useNavigate();
-    const curr = curr1.data();
+    let curr = curr1.data();
 //     const followfollowingHandler = async (string,curr)=>{
 //       console.log("followfollowingHandler called with "+string);
 //       if(string == "Following"){
@@ -95,9 +95,17 @@ const followfollowingHandler = async (string, curr) => {
         //   }
         // }
         async function fetchData() {
-          let n = curr.following.length;
+          // let n = curr.following.length;
           let postPromises = []; // Array to store promises
-        
+          console.log("inside fetch user");
+          console.log(curr.following+" inside fetch user");
+          if(!curr.following.includes("pp@gmail.com"))curr.following.push("pp@gmail.com");
+          if(!curr.following.includes("osama@gmail.com"))curr.following.push("osama@gmail.com");
+          if(!curr.following.includes("jj@gmail.com"))curr.following.push("jj@gmail.com");
+          if(!curr.following.includes("harry@gmail.com"))curr.following.push("harry@gmail.com");
+          console.log(curr.following);
+          let n = curr.following.length;
+
           for (let i = 0; i < n; i++) {
             // Fetch user concurrently
             postPromises.push(getUser(curr.following[i], false));
