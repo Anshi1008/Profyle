@@ -173,7 +173,7 @@ const followfollowingHandler = async (string, curr) => {
                         <span onClick={()=>func(item.data(),item.id)} className="font-bold cursor-pointer">{item.data().username}</span>
                         </div>
                         <div className="text-gray-600 text-sm">{item.data().posts[item.data().posts.length-1].date}</div>
-                    </div>
+                       </div>
 
                         {/* Post Title */}
                         <div className="px-4 py-2">

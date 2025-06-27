@@ -1,14 +1,22 @@
+// src/firebase.js
 import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
+// 🔑  Replace any of the values below with the ones shown
+//     in Firebase Console → Project Settings → SDK snippet.
 const firebaseConfig = {
-    apiKey: "AIzaSyCO66tY9VJiqB8zXctaCqVlpjdZCMSlw3A",
-    authDomain: "psit-assist.firebaseapp.com",
-    projectId: "psit-assist",
-    storageBucket: "psit-assist.appspot.com",
-    messagingSenderId: "1020211073830",
-    appId: "1:1020211073830:web:36789e91e973cb58e3a7e7",
-    measurementId: "G-99WK1RYGWX",
-    databaseURL : 'https://psit-assist-default-rtdb.firebaseio.com/'
-  };
+  apiKey: "AIzaSyBK6yx9wGWRF39JkIdSTQoODtIHDzv9uX4",
+  authDomain: "assist-832c5.firebaseapp.com",
+  projectId: "assist-832c5",
+  storageBucket: "assist-832c5.appspot.com",      // ← fixed typo
+  messagingSenderId: "421453426743",
+  appId: "1:421453426743:web:8323d2218f9d9f2e508fb2",
+  measurementId: "G-KWSQCSJQQP"
+};
 
-export const app = initializeApp(firebaseConfig);
+// Initialise Firebase & Analytics
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+// 👉  Export whatever the rest of your code is expecting
+export { app, analytics };
